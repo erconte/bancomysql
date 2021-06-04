@@ -1,0 +1,284 @@
+-- Sintaxe utilizada para criar um database
+-- create database itau;
+
+-- Sintaxe utilizada para por em uso o database
+use itau;
+
+-- Sintaxe utilizada para criar a nossa tabela 
+create table itau.clientes(
+codigo_cliente integer not null primary key,
+nome_cliente varchar(50) not null,
+idade_cliente integer not null,
+email_cliente varchar(80) not null);
+
+-- Sintaxe utilizada para ver a estrutura dos campos criados na tabela
+describe itau.clientes;
+
+-- Sintaxe utilizada para inserir registros na tabela
+insert into itau.clientes
+(codigo_cliente,nome_cliente,idade_cliente,email_cliente)
+values
+(1,"Roberto Rivelino",19,"roberto.r@unibanco.com.br"),
+(2,"Vivian",18,"vivian@unibanco.com.br"),
+(3,"Jéssica Zeferino",20,"jessica.z@itau.com.br"),
+(4,"Nilson Nakamura",21,"nilson.k@itau,com.br");
+
+-- Sintaxe utilizada para consultar os registros
+select * from itau.clientes;
+
+use itau;
+
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (5,"Athena Oneill",20,"ac.mi@Craseu.co.uk"),(6,"Xavier E. Jefferson",80,"dapibus@odioauctor.co.uk"),(7,"Amethyst T. Kirkland",81,"sem.ut.cursus@Donecest.ca"),(8,"Jemima Campos",20,"mattis.Integer.eu@elitpharetraut.org"),(9,"Calvin X. Fischer",42,"nec.luctus.felis@Aliquam.com"),(10,"Gemma M. Shelton",47,"aliquet@liberonecligula.net"),(11,"Caesar Alexander",77,"et.netus@vitae.co.uk"),(12,"Bell Chang",70,"dictum.cursus@iaculislacuspede.net"),(13,"Bruce K. Kim",82,"sociis@egestasrhoncus.org"),(14,"Kerry Morse",71,"Donec.sollicitudin@tincidunt.org");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (15,"Hilel Wright",19,"non.egestas@netusetmalesuada.ca"),(16,"Fredericka X. Brady",84,"sit.amet@sagittis.ca"),(17,"Walter Wade",95,"Suspendisse.eleifend@necimperdiet.ca"),(18,"Bruno Glenn",95,"purus@dictum.net"),(19,"Indira Fields",28,"sollicitudin.orci@inconsequat.ca"),(20,"Lucian Mcgowan",81,"nibh@ligula.net"),(21,"Emery Valentine",61,"id.nunc.interdum@Duisami.edu"),(22,"Paula Carson",89,"sapien.Nunc.pulvinar@senectus.org"),(23,"Ifeoma Bridges",65,"ultricies@faucibusid.co.uk"),(24,"Maisie W. Logan",44,"nec@mauris.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (25,"Louis Huber",24,"Donec@sociis.edu"),(26,"Todd M. Hays",43,"Donec@Fuscealiquet.net"),(27,"Tanisha Fischer",56,"nec@fermentumfermentumarcu.co.uk"),(28,"Coby Hardin",90,"nisi.Aenean@laciniavitae.org"),(29,"Beverly V. Shelton",43,"adipiscing.elit@Curabitur.net"),(30,"Kamal Q. Melton",24,"vel.est.tempor@necmetus.ca"),(31,"Kimberley Munoz",45,"rutrum.lorem@idmagnaet.edu"),(32,"Ella Rosales",90,"aliquet@Quisqueporttitoreros.net"),(33,"Daria N. Stephenson",55,"nisi.Aenean.eget@nonummyutmolestie.com"),(34,"Brett C. Glass",82,"ligula.tortor.dictum@commodoipsumSuspendisse.org");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (35,"Sigourney Yates",69,"in@Maecenaslibero.net"),(36,"Sybill Mosley",25,"Lorem.ipsum.dolor@Maecenasiaculisaliquet.co.uk"),(37,"Tyler Mccoy",77,"diam.luctus.lobortis@etarcu.co.uk"),(38,"Cameron X. Allison",26,"convallis.ligula@ipsumleo.edu"),(39,"Carol Mcmillan",87,"lorem.eget@magnaaneque.edu"),(40,"Charles A. Cain",42,"quam@ridiculus.org"),(41,"Gwendolyn G. Mccoy",27,"tellus.eu.augue@Mauriseuturpis.co.uk"),(42,"Lyle M. Emerson",34,"leo@ac.com"),(43,"Orla Robbins",96,"nec@Donecatarcu.org"),(44,"Fatima Jennings",72,"elit.pellentesque.a@Duiscursusdiam.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (45,"Clark D. Monroe",38,"blandit.mattis@luctus.co.uk"),(46,"Perry D. Henry",27,"ut@Namnulla.com"),(47,"Abra Jefferson",47,"ac.nulla@mauris.org"),(48,"Ruth E. Suarez",87,"parturient@velitinaliquet.com"),(49,"Raphael X. Buckner",41,"sit.amet.metus@antelectusconvallis.co.uk"),(50,"Len C. Barnes",80,"eleifend.nec.malesuada@nec.org"),(51,"Finn L. Buckner",29,"auctor.vitae.aliquet@Praesent.ca"),(52,"Colorado Stevenson",48,"semper.cursus@incursuset.edu"),(53,"Elvis Ayala",88,"eu@urnasuscipit.co.uk"),(54,"Iliana N. Cross",34,"natoque@nibhdolornonummy.net");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (55,"Hoyt Q. Dennis",23,"non.quam@primisinfaucibus.ca"),(56,"Jacqueline Vazquez",18,"mauris.ipsum@non.com"),(57,"Griffin Moody",44,"eu.enim.Etiam@musAeneaneget.ca"),(58,"Emma G. Matthews",63,"hendrerit.id.ante@egestas.ca"),(59,"Rana Mooney",40,"libero.nec.ligula@ultriciesornareelit.com"),(60,"Morgan Rhodes",20,"nulla.ante.iaculis@diam.edu"),(61,"Hope V. Grimes",55,"nunc.nulla@auctorveliteget.edu"),(62,"Caryn P. Guerra",93,"scelerisque.neque@et.com"),(63,"Illiana Watts",35,"mi.felis@etrutrumeu.org"),(64,"Eaton K. Tillman",65,"risus.at@in.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (65,"Nayda I. Richards",90,"at.sem.molestie@sem.edu"),(66,"Desiree E. Todd",63,"varius@purusgravidasagittis.co.uk"),(67,"Autumn Sandoval",51,"dis@neque.edu"),(68,"Joel Cameron",28,"Cras.lorem@vitae.com"),(69,"Quynn Z. Reynolds",64,"a@ProindolorNulla.co.uk"),(70,"Alisa Aguilar",27,"tortor.nibh.sit@mattis.co.uk"),(71,"Allegra Haney",72,"a.facilisis.non@CuraeDonec.ca"),(72,"Tucker B. Witt",26,"Lorem.ipsum@risusvarius.org"),(73,"Ronan Fulton",93,"eleifend@liberodui.co.uk"),(74,"Giacomo W. Johnston",32,"consectetuer.adipiscing.elit@diam.co.uk");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (75,"Eagan Dyer",60,"Proin.dolor@non.ca"),(76,"Jelani F. Brock",43,"dui@Curae.edu"),(77,"Stuart Cohen",78,"lorem.vehicula.et@Quisque.co.uk"),(78,"Nehru X. Mcgee",31,"mi@Nam.edu"),(79,"Laith Cox",72,"ac.mi@pedeSuspendisse.com"),(80,"Zenaida Z. Bullock",94,"interdum@afeugiattellus.com"),(81,"Daniel Gallagher",61,"ridiculus@hendrerit.ca"),(82,"Melvin Wong",50,"lorem.tristique@arcuSed.org"),(83,"Christine P. Chan",98,"pede.sagittis@cubiliaCuraePhasellus.co.uk"),(84,"Ryan Wright",47,"Nullam@elitdictumeu.org");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (85,"Ifeoma G. Cook",53,"fringilla.cursus.purus@odioa.net"),(86,"Eleanor Q. Bonner",85,"blandit.viverra.Donec@rutrumFusce.ca"),(87,"Noelani Mcconnell",21,"penatibus.et.magnis@sitametconsectetuer.net"),(88,"Alec F. Lancaster",25,"Donec.elementum.lorem@mus.org"),(89,"Kenneth T. Morales",31,"sollicitudin.a@ultrices.edu"),(90,"David Skinner",30,"litora.torquent@incursuset.ca"),(91,"Cairo Schneider",25,"iaculis@leoinlobortis.org"),(92,"Montana S. Newman",83,"Aliquam@risusatfringilla.org"),(93,"Ciara L. Solis",34,"in.felis@iaculis.com"),(94,"Pandora Brewer",78,"lacinia.Sed@SeddictumProin.com");
+INSERT INTO `clientes` (`codigo_cliente`,`nome_cliente`,`idade_cliente`,`email_cliente`) VALUES (95,"Leilani Kennedy",41,"nec.euismod@Phaselluselitpede.edu"),(96,"Jolene R. Marks",91,"pede@mollisnoncursus.com"),(97,"Belle O. Castro",36,"vehicula.risus@sapiencursus.net"),(98,"Sierra Bishop",87,"lacus.vestibulum@Mauris.edu"),(99,"Fuller T. Gordon",39,"Quisque.nonummy.ipsum@dolortempusnon.net"),(100,"Freya Hoffman",97,"consequat.purus@Nullamvelit.co.uk"),(101,"Gloria T. Mcdaniel",32,"dapibus.gravida@pellentesquemassa.edu"),(102,"Elmo G. Juarez",77,"eleifend.nunc.risus@Aliquam.com"),(103,"Naomi Curry",81,"erat.volutpat@velarcuCurabitur.co.uk"),(104,"Rahim Dickson",75,"mus@sed.edu");
+
+select * from itau.clientes;
+
+-- Sintaxe utilizada para fazer a ordenação da visualização dos dados 
+select * from itau.clientes order by nome_cliente asc;
+select * from itau.clientes order by nome_cliente desc;
+
+-- Sintaxe utilizada para criar um filtro no banco de dados
+select * from itau.clientes where idade_cliente=18;
+select * from itau.clientes where codigo_cliente=1;
+
+-- Sintaxe utilizada para fazer um range / faixa de registros
+select * from itau.clientes where idade_cliente>=18 and idade_cliente<=25 order by idade_cliente;
+select * from itau.clientes where idade_cliente between 18 and 25 order by idade_cliente;
+
+-- Sintaxe utilizada para fazer um filtro de registros intercalados
+select * from itau.clientes where idade_cliente in(30,40,50) order by idade_cliente;
+select nome_cliente,idade_cliente from itau.clientes where idade_cliente in(30,40,50) order by idade_cliente;
+
+-- Sintaxe utilizada para retornar o menor valor de um campo numérico
+select min(idade_cliente) as Menor_Idade_Cliente from itau.clientes;
+select * from itau.clientes where idade_cliente=18;
+
+-- Sintaxe utilizada para retornar o maior valor de um campo numérico
+select max(idade_cliente) as Maior_Idade_Cliente from itau.clientes;
+
+-- Sintaxe utilizada para fazer um sub-select 
+select * from itau.clientes where idade_cliente = (select min(idade_cliente) from itau.clientes);
+select * from itau.clientes where idade_cliente = (select max(idade_cliente) from itau.clientes);
+
+-- Sintaxe de procura de registro utilizando um campo texto
+select nome_cliente,email_cliente from itau.clientes where nome_cliente="vivian";
+select nome_cliente,email_cliente from itau.clientes where nome_cliente like "roberto%";
+select nome_cliente,email_cliente from itau.clientes where nome_cliente like "%Rivelino";
+select nome_cliente,email_cliente from itau.clientes where nome_cliente like "%M.%";
+
+-- Sintaxe para criar um backup interno da nossa base de dados 
+create table itau.bck_clientes select * from itau.clientes;
+
+select * from itau.bck_clientes;
+
+-- Sintaxe para fazer a contagem dos registros 
+select count(*) as Total_Reg_Tab_Clientes from itau.clientes;
+select count(*) as Total_Reg_Tab_Bck_Clientes from itau.bck_clientes;
+-- Contador de resultados de um filtro
+select count(*) as Total_Pessoas_18_ate_25_anos from itau.clientes where idade_cliente between 18 and 25;
+
+-- Sintaxe para criar um novo campo na estrutura da nossa tabela 
+alter table itau.clientes add endereco varchar(80) not null;
+
+-- Sintaxe utilizada para excluir fisicamente um campo de uma tabela e os seues registros
+alter table itau.clientes drop endereco;
+
+-- Sintaxe utilizada para renomear um campo existente na tabela
+alter table itau.clientes rename column endereco_clientes to endereco_cliente;
+
+-- Sintaxe utilizada para modificar o tipo de dados ou tamanho  de um campo
+alter table itau.clientes change endereco_cliente endereco_clientes varchar(50) not null;
+alter table itau.clientes change email_cliente email_cliente varchar(60) not null;
+describe itau.clientes;
+
+select * from itau.clientes;
+
+-- Sintaxe utilizada para fazer a inserção de registros em um campo desejado
+update itau.clientes set endereco_cliente="Rua Tito, 1200" where codigo_cliente=2;
+update itau.clientes set endereco_cliente="Rua Fábia, 50" where nome_cliente="Nilson Nakamura";
+
+-- Sintaxe para fazer a atualização dos registros da tabela em lote 
+update itau.clientes set endereco_cliente="Atualizar o campo Endereço Cliente" where endereco_cliente="";
+
+-- Sintaxe do comando para excluir fisicamente toda a tabela e os seus registros
+drop table itau.bck_clientes;
+
+create table itau.bck_clientes select * from itau.clientes;
+select * from itau.bck_clientes;
+
+-- Sintaxe utilizada para excluir registros 
+delete from itau.clientes;
+delete from itau.clientes where idade_cliente >=40;
+
+select * from itau.clientes where idade_cliente>=40;
+
+-- Restaurando um backup de dados para a tabela de produção
+insert into itau.clientes
+(codigo_cliente,nome_cliente,idade_cliente,email_cliente,endereco_cliente)
+select codigo_cliente,nome_cliente,idade_cliente,email_cliente,endereco_cliente from itau.bck_clientes where idade_cliente>=40;
+
+
+describe itau.clientes;
+
+
+create database unibanco;
+use unibanco;
+
+CREATE TABLE `funcionarios` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `codigo_funcionario` mediumint,
+  `nome_funcionario` varchar(255) default NULL,
+  `email_funcionario` varchar(255) default NULL,
+  `telefone_funcionario` varchar(100) default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (1,"Ifeoma Gallegos","enim.Curabitur@aodiosemper.ca","1-518-621-0724"),(2,"Tatyana Y. Harrell","hendrerit.id.ante@magna.net","1-739-883-5212"),(3,"Channing U. Snow","in@vitaerisusDuis.co.uk","1-618-231-7606"),(4,"Dieter W. Horne","tempor.lorem.eget@dui.net","1-632-827-1796"),(5,"Morgan Marks","mauris.sapien@facilisisegetipsum.co.uk","1-561-666-6921"),(6,"Jin S. Wade","varius@dis.ca","1-840-548-6869"),(7,"Cheryl I. Carroll","augue@ridiculusmus.edu","1-757-250-7857"),(8,"Kane H. Newman","mi.pede.nonummy@Aliquamauctorvelit.ca","1-608-104-6779"),(9,"Elijah J. Ramsey","interdum.enim.non@Etiam.org","1-712-260-6412"),(10,"Camden Hurst","luctus.vulputate@ametornarelectus.edu","1-422-257-3937");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (11,"Sebastian Rowe","dis.parturient.montes@nisia.com","1-497-664-2799"),(12,"Ishmael Goodman","cubilia.Curae.Donec@felisegetvarius.com","1-713-834-4999"),(13,"Cain X. Kennedy","aliquam@nullaante.com","1-216-438-1661"),(14,"Ivor Foster","commodo.auctor@Nuncmauris.com","1-359-163-3637"),(15,"Griffith Green","tempor.diam.dictum@eu.org","1-369-934-1626"),(16,"Emery U. Alston","ligula.tortor@magnaaneque.co.uk","1-853-724-9841"),(17,"Marsden L. Hutchinson","et.libero@semelitpharetra.co.uk","1-945-348-6899"),(18,"Holly I. Fowler","tortor.Integer@turpisNulla.com","1-230-293-5303"),(19,"Latifah C. Lamb","faucibus.orci.luctus@nectempus.org","1-362-865-8449"),(20,"Francis Higgins","egestas@pedenonummy.net","1-792-114-3375");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (21,"Howard V. Anthony","purus.ac@metus.co.uk","1-426-872-5772"),(22,"Orson Mcdowell","blandit.enim.consequat@Proin.com","1-949-646-9856"),(23,"Lester Oneal","elit.pede.malesuada@nonarcuVivamus.ca","1-246-622-5538"),(24,"Sage B. Baker","blandit.Nam@Infaucibus.net","1-264-404-2349"),(25,"Anika Alexander","sodales.Mauris@Nullatincidunt.ca","1-478-313-0455"),(26,"Zelenia Finley","semper@lobortisClassaptent.com","1-193-312-8553"),(27,"Alexandra V. Villarreal","purus.Maecenas@feugiatSed.com","1-539-337-6661"),(28,"Kim O. Gilbert","ligula.Aenean@quisurnaNunc.edu","1-224-656-6511"),(29,"Tatum E. Rogers","sed.dolor@pedeblandit.edu","1-517-159-6135"),(30,"Christian Bond","sagittis@Duisdignissimtempor.com","1-880-289-9636");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (31,"Vincent Q. Hampton","Quisque.ac.libero@velquamdignissim.edu","1-219-348-9646"),(32,"Chandler Z. Leon","cursus.vestibulum@euismodin.co.uk","1-504-643-2411"),(33,"Briar Chambers","accumsan@porttitorinterdumSed.net","1-857-756-7062"),(34,"Ariana Mann","urna@enimsitamet.co.uk","1-506-132-2594"),(35,"Colt X. Lester","condimentum.Donec.at@Praesentinterdumligula.org","1-103-178-6366"),(36,"Karyn S. Stanton","fringilla@euismodenim.org","1-483-762-6294"),(37,"Colt Hendricks","eros.Nam.consequat@penatibusetmagnis.edu","1-436-298-3137"),(38,"Ferdinand R. Moran","facilisis.non@atiaculisquis.net","1-610-348-3625"),(39,"Keelie V. Mccray","dignissim@ut.org","1-115-553-6128"),(40,"Karyn L. Parks","consectetuer.cursus@est.org","1-871-374-4131");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (41,"Steel Daniels","eget.ipsum@vellectus.co.uk","1-375-690-8501"),(42,"Eve Bryant","faucibus@orci.net","1-126-475-5889"),(43,"Melissa Head","mus.Proin.vel@accumsan.com","1-204-639-6851"),(44,"Patricia Shaw","auctor.vitae@sed.org","1-191-650-4540"),(45,"Illiana Burris","sollicitudin@nibh.com","1-828-340-1212"),(46,"Kitra Rocha","Nam.interdum@eu.net","1-140-402-6117"),(47,"Dorothy Norton","ornare@lobortisquis.net","1-559-552-2341"),(48,"Alisa Y. Pugh","Aliquam.gravida@urna.org","1-845-484-9061"),(49,"Orlando Santiago","pharetra@Cumsociis.net","1-752-736-5550"),(50,"Alexis Mitchell","eu.lacus@miAliquamgravida.net","1-352-135-9757");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (51,"Stewart English","mauris.blandit@nec.edu","1-772-487-7627"),(52,"Scarlett Patton","pharetra.ut.pharetra@in.co.uk","1-357-616-4986"),(53,"Hanae Bean","vehicula.Pellentesque.tincidunt@leoVivamusnibh.org","1-603-104-2886"),(54,"Finn Kane","lacinia.orci.consectetuer@Nam.co.uk","1-959-780-7993"),(55,"Brody Maddox","id.sapien@condimentumeget.org","1-834-262-8005"),(56,"Hedda Hines","Sed.auctor@loremegetmollis.com","1-641-828-4332"),(57,"Xanthus I. Hill","mauris@nonegestas.edu","1-194-726-0439"),(58,"Jerry C. Zimmerman","Etiam.imperdiet@esttemporbibendum.edu","1-214-340-2352"),(59,"Whitney R. Langley","ad.litora.torquent@turpisAliquam.edu","1-233-107-7263"),(60,"John X. Herman","nec.luctus@Sedeueros.co.uk","1-292-239-7674");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (61,"Kenneth Case","Nullam.vitae@accumsan.ca","1-716-926-3573"),(62,"Norman T. Marquez","quam@Aliquam.co.uk","1-730-530-1851"),(63,"Brock Jackson","nisi.a.odio@mollisDuis.co.uk","1-240-602-5555"),(64,"Xavier U. Bauer","orci.sem.eget@ascelerisquesed.edu","1-228-516-9897"),(65,"Kiayada May","habitant@neceleifendnon.org","1-806-195-8812"),(66,"Miranda Gillespie","Nulla.eu@consectetuereuismodest.org","1-954-297-3856"),(67,"Lee E. Ballard","Vivamus@elementum.org","1-757-572-8306"),(68,"Hilel R. Reid","urna.Vivamus.molestie@vel.org","1-993-103-5230"),(69,"Maia Woodard","Donec@Cras.ca","1-652-620-2000"),(70,"Benjamin Collins","mus.Aenean@Vestibulumaccumsanneque.edu","1-662-649-5962");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (71,"Rhona W. Holman","viverra.Donec.tempus@Vestibulumanteipsum.ca","1-351-736-6811"),(72,"Duncan Larsen","tempus@arcu.org","1-540-385-8718"),(73,"Sierra T. Santiago","cursus@Phasellusdolor.ca","1-240-288-7023"),(74,"Quinn Petersen","metus@luctusvulputate.net","1-423-244-3322"),(75,"Penelope Mercer","Duis.a@dolor.com","1-736-666-7228"),(76,"Zachary Colon","feugiat@molestiepharetra.edu","1-189-508-7972"),(77,"Dominique D. Moran","sodales@sagittis.edu","1-681-426-9291"),(78,"Galena D. Romero","dui@sodales.ca","1-521-325-6898"),(79,"Mona F. Finley","adipiscing.fringilla@dapibusrutrum.edu","1-351-964-1778"),(80,"Ishmael Hooper","semper.rutrum.Fusce@tinciduntpedeac.co.uk","1-814-795-0642");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (81,"Matthew Hill","nunc.ac@primisin.org","1-503-336-8900"),(82,"Abel T. Shannon","nec.urna.suscipit@eratvitae.net","1-754-541-3036"),(83,"Phillip V. Woods","lacus.Cras.interdum@utaliquam.net","1-596-116-3450"),(84,"Mary A. Moreno","molestie@Proinnonmassa.org","1-687-240-9412"),(85,"Serina N. Morris","id.blandit.at@Duis.ca","1-534-712-9207"),(86,"MacKensie Sanders","sociis@odioAliquamvulputate.com","1-478-730-8204"),(87,"Micah Wong","ultrices@vitaesodales.co.uk","1-642-200-5495"),(88,"Wanda Strickland","tincidunt.aliquam.arcu@Namtempor.edu","1-652-364-6400"),(89,"Mannix F. Price","lorem.vitae@velquamdignissim.org","1-100-501-0321"),(90,"Bevis W. Chandler","Mauris@ametornare.net","1-182-502-5377");
+INSERT INTO `funcionarios` (`codigo_funcionario`,`nome_funcionario`,`email_funcionario`,`telefone_funcionario`) VALUES (91,"Evan T. Barber","suscipit.est.ac@ligulaAliquam.org","1-231-600-7688"),(92,"Hayfa Hill","pellentesque.massa.lobortis@sit.net","1-600-665-0659"),(93,"Lenore Cooley","orci.tincidunt@montesnasceturridiculus.com","1-450-168-9215"),(94,"Aquila Farrell","et.eros.Proin@lorem.edu","1-392-285-5812"),(95,"Louis Cruz","tempus@CraspellentesqueSed.org","1-547-363-2178"),(96,"Kadeem X. Kline","sem@ac.com","1-701-562-6695"),(97,"Phyllis G. Joyce","libero.dui@loremtristique.ca","1-473-218-8626"),(98,"Ariel Juarez","eu@vulputateullamcorper.org","1-481-820-4225"),(99,"David P. Garza","odio@Nunc.com","1-776-558-7082"),(100,"Alice E. Zimmerman","lacinia@ut.edu","1-599-414-6741");
+
+select * from unibanco.funcionarios;
+
+create table itau.funcionarios(
+codigo_funcionario integer not null auto_increment primary key,
+nome_funcionario varchar(50) not null,
+cpf_funcionario char(11) not null,
+idade_funcionario integer not null,
+email_funcionario varchar(80) not null);
+
+insert into itau.funcionarios
+(nome_funcionario,cpf_funcionario,idade_funcionario,email_funcionario)
+values
+("Rodinei","25510853832",20,"rodinei@itau.com.br");
+
+select * from itau.funcionarios;
+
+-- Processo de migração ou fusão de banco de dados ou tabelas diferentes
+insert into itau.funcionarios
+(nome_funcionario,cpf_funcionario,idade_funcionario,email_funcionario)
+select nome_funcionario,"",0,email_funcionario from unibanco.funcionarios;
+
+-- Sintaxe utilizada para fazer o desenvolvimento de cálculos na tabela
+SELECT 
+    produto_vendido,
+    quantidade_vendida,
+    valor_unitario_venda,
+    (quantidade_vendida*valor_unitario_venda) as Total,
+    nome_vendedor
+FROM
+    itau.vendas;
+
+-- Sintaxe utilizando a função soma para calcular os campos de uma coluna
+SELECT 
+    SUM(quantidade_vendida * valor_unitario_venda) AS total
+FROM
+    itau.vendas;
+    
+-- Sintaxe utilizando a função group by para agrupar resultados de um cálculo
+SELECT 
+    SUM(quantidade_vendida * valor_unitario_venda) AS total,
+    nome_vendedor
+FROM
+    itau.vendas group by nome_vendedor order by total;
+
+SELECT 
+    COUNT(idade_cliente) AS Total_Pessoas, idade_cliente
+FROM
+    itau.clientes
+WHERE
+    idade_cliente BETWEEN 18 AND 25 group by idade_cliente order by Total_Pessoas;
+
+select * from itau.clientes where idade_cliente=25;
+
+
+
+insert into itau.vendas
+(produto_vendido,quantidade_vendida,valor_unitario_venda,nome_vendedor)
+values
+("Mouse",10,28.50,"Marcos"),
+("Teclado",15,39.50,"Cristina"),
+("Impressora",10,280.00,"Edison"),
+("Monitores",20,450.99,"Cristina");
+
+
+create table itau.vendas(
+codigo_venda integer not null auto_increment primary key,
+produto_vendido varchar(50) not null,
+quantidade_vendida integer not null,
+valor_unitario_venda decimal(8,2)not null,
+nome_vendedor varchar(50) not null);
+
+use itau;
+
+CREATE TABLE `Produtos` (
+	`codigo_produto` INT NOT NULL AUTO_INCREMENT,
+	`nome_produto` varchar(50) NOT NULL,
+	`valor_produto` DECIMAL(8,2) NOT NULL,
+	`cod_marca_produto` INT NOT NULL,
+	PRIMARY KEY (`codigo_produto`)
+);
+
+CREATE TABLE `Marcas` (
+	`codigo_marca` int NOT NULL AUTO_INCREMENT,
+	`nome_marca` varchar(50) NOT NULL,
+	PRIMARY KEY (`codigo_marca`)
+);
+
+ALTER TABLE `Produtos` ADD CONSTRAINT `Produtos_fk0` FOREIGN KEY (`cod_marca_produto`) REFERENCES `Marcas`(`codigo_marca`);
+
+insert into itau.produtos
+(nome_produto,valor_produto,cod_marca_produto)
+values
+("Fogão",1600,1),
+("Microondas",480,1),
+("TV",1800,2),
+("Celular",1950,3);
+
+select * from itau.produtos;
+
+
+("Geladeira",1850,1);
+
+insert into itau.marcas
+(nome_marca)
+values
+("Brastemp"),
+("Samsung"),
+("LG"),
+("Sony");
+
+select * from itau.marcas;
+
+
+-- Criando um relacionamento entre as tabelas no banco de dados inner join
+select p.cod_marca_produto,p.nome_produto,p.valor_produto,m.nome_marca,m.codigo_marca
+from itau.marcas as m
+inner join itau.produtos as p
+on(p.cod_marca_produto=m.codigo_marca);
+
+-- Criando um relacionamento entre as tabelas no banco de dados right join
+select p.cod_marca_produto,p.nome_produto,p.valor_produto,m.nome_marca,m.codigo_marca
+from itau.produtos as p
+right join itau.marcas as m
+on(p.cod_marca_produto=m.codigo_marca);
+
+-- Criando um relacionamento entre as tabelas no banco de dados left join
+select p.cod_marca_produto,p.nome_produto,p.valor_produto,m.nome_marca,m.codigo_marca
+from itau.marcas as m
+right join itau.produtos as p
+on(p.cod_marca_produto=m.codigo_marca);
